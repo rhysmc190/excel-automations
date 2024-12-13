@@ -1,0 +1,60 @@
+schema = 3
+
+[mod]
+  [mod."github.com/akatsuki-py/tfd"]
+    version = "v0.0.2"
+    hash = "sha256-2huod8oMiV910qbibrfJ82tbM3y2AYoSfAva8WvqkTc="
+  [mod."github.com/frankban/quicktest"]
+    version = "v1.14.6"
+    hash = "sha256-4DRq4JlaahwdLSQlx8gVuMoC4U9JmDI84jeNx8hO0D4="
+  [mod."github.com/gdamore/encoding"]
+    version = "v0.0.0-20151215212835-b23993cbb635"
+    hash = "sha256-Cm1X4IXUZVa6QdMD2B0IVX/FoyfAwfn63Ek50S/O8TQ="
+  [mod."github.com/gdamore/tcell"]
+    version = "v1.1.0"
+    hash = "sha256-X1JYN/7Yi4lat78fClPWzH1fCeNgEgPPYgHw+Cd+w9M="
+  [mod."github.com/google/btree"]
+    version = "v1.0.0"
+    hash = "sha256-5gr0RMnlvrzCke3kwpkf92WvW3x5nnKZesoulyoYRC0="
+  [mod."github.com/google/go-cmp"]
+    version = "v0.5.9"
+    hash = "sha256-lQc4O00R3QSMGs9LP8Sy7A9kj0cqV5rrUdpnGeipIyg="
+  [mod."github.com/kr/pretty"]
+    version = "v0.3.1"
+    hash = "sha256-DlER7XM+xiaLjvebcIPiB12oVNjyZHuJHoRGITzzpKU="
+  [mod."github.com/kr/text"]
+    version = "v0.2.0"
+    hash = "sha256-fadcWxZOORv44oak3jTxm6YcITcFxdGt4bpn869HxUE="
+  [mod."github.com/lucasb-eyer/go-colorful"]
+    version = "v0.0.0-20180709185858-c7842319cf3a"
+    hash = "sha256-DJbezxfSWcLC3EMq1YgleIKYsmczCZ7A3iZCyLDpYgM="
+  [mod."github.com/marcusolsson/tui-go"]
+    version = "v0.4.0"
+    hash = "sha256-bLBi8wPqZABn7YG16lIs282HrZbuR8LqB9sphIbOnJU="
+  [mod."github.com/mattn/go-runewidth"]
+    version = "v0.0.3"
+    hash = "sha256-70SPSC1DLVOVKuHo5ynvuMTHEvlvBj/2gGf33M1Kg1E="
+  [mod."github.com/mitchellh/go-wordwrap"]
+    version = "v1.0.0"
+    hash = "sha256-bgG/RLuwh8hn34/LMfGX3Yr9+TIFFSYCM9jakRlfzsk="
+  [mod."github.com/peterbourgon/diskv/v3"]
+    version = "v3.0.1"
+    hash = "sha256-T8jazaLhrXW4+u2dJ+MPNeutCHqcgind6X9LAYVwqIQ="
+  [mod."github.com/rogpeppe/fastuuid"]
+    version = "v1.2.0"
+    hash = "sha256-yDnHsLw8KF4zfbJska1igIo4IbVpGDq+vH3+YV5jCgk="
+  [mod."github.com/rogpeppe/go-internal"]
+    version = "v1.9.0"
+    hash = "sha256-XKmbu8l55XGrvC20j8jocpauwZsdbP83YAwH79BEAC4="
+  [mod."github.com/shabbyrobe/xmlwriter"]
+    version = "v0.0.0-20200208144257-9fca06d00ffa"
+    hash = "sha256-boyfhK4zwl+bTMaOEN2NFZC6nIpEvr+3JSI8cSQ3M4g="
+  [mod."github.com/tealeg/xlsx/v3"]
+    version = "v3.3.11"
+    hash = "sha256-B3L1Pov8EkMDvJ6wshXD0LquqvTx7Dte46+16GZH2Ns="
+  [mod."golang.org/x/text"]
+    version = "v0.18.0"
+    hash = "sha256-aNvJW4gQs+MTfdz6DZqyyHQS2GJ9W8L8qKPVODPn4+k="
+  [mod."gopkg.in/yaml.v3"]
+    version = "v3.0.1"
+    hash = "sha256-FqL9TKYJ0XkNwJFnq9j0VvJ5ZUU1RvH/52h/f5bkYAU="
