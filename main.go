@@ -31,7 +31,7 @@ const SHEET_NAME = "Standard Estimating"
 var HEADING_NAMES = [4]string{QUANTITY, UNIT, SUPPLY_RATE, LBR_RATE}
 
 type Config struct {
-	directory string `yaml:"directory"`
+	Directory string `yaml:"directory"`
 }
 
 func processError(err error) {
@@ -234,7 +234,9 @@ func loadConfig() Config {
 
 func promptForFileName() string {
 	config := loadConfig()
-	os.Chdir(filepath.Dir(config.directory))
+	directory, err := filepath.Abs(config.Directory)
+	processError(err)
+	os.Chdir(directory)
 	filename, err := tfd.CreateSelectDialog([]string{"xlsx"}, false)
 	processError(err)
 
@@ -242,9 +244,7 @@ func promptForFileName() string {
 }
 
 func main() {
-	// filename := promptForFileName()
-
-	filename := "./Standard Estimate - 5 Bukari Street, West Wollongong - 26112024.xlsx"
+	filename := promptForFileName()
 
 	s := readExcelFile(filename)
 
