@@ -22,4 +22,7 @@ pkgs.mkShell {
     gomod2nix
     pkgs.zip
   ];
+  shellHook = ''
+    git config --local core.hooksPath .githooks
+  '';
 }
