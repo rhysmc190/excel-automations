@@ -232,8 +232,7 @@ func loadConfig() Config {
 	return cfg
 }
 
-func promptForFileName() string {
-	config := loadConfig()
+func promptForFileName(config Config) string {
 	directory, err := filepath.Abs(config.Directory)
 	processError(err)
 	os.Chdir(directory)
@@ -243,8 +242,16 @@ func promptForFileName() string {
 	return filename
 }
 
+var (
+	config Config
+)
+
+func init() {
+	config = loadConfig()
+}
+
 func main() {
-	filename := promptForFileName()
+	filename := promptForFileName(config)
 
 	s := readExcelFile(filename)
 
