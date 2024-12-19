@@ -2,16 +2,15 @@ package main
 
 import (
 	"os"
-	"path/filepath"
 
 	"github.com/akatsuki-py/tfd"
 	"github.com/rs/zerolog"
 )
 
 func promptForFileName() string {
-	directory, err := filepath.Abs(config.Directory)
-	processError(err)
-	os.Chdir(directory)
+	// directory, err := filepath.Abs(config.InputDirectory)
+	// processError(err)
+	os.Chdir(config.InputDirectory)
 	filename, err := tfd.CreateSelectDialog([]string{"xlsx"}, false)
 	processError(err)
 
@@ -28,6 +27,7 @@ var (
 func init() {
 	config = loadConfig()
 	logger = getLogger()
+	logger.Info().Any("config", config).Msg("Init complete")
 }
 
 func main() {

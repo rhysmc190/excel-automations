@@ -7,7 +7,8 @@ import (
 
 func processError(err error) {
 	if err != nil {
-		logger.Error().Err(err)
+		logger.Error().Err(err).Msg("Unexpected Error")
+		time.Sleep(time.Second * 5)
 		panic(err)
 	}
 }

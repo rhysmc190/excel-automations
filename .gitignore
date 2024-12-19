@@ -4,4 +4,5 @@ build
 # binary: 
 excel-automations
 test/*.csv
+test/out
 *.log
