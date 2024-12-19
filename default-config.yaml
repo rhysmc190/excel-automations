@@ -1,2 +1,3 @@
-directory: "."
+inputDirectory: "."
+outputDirectory: "."
 # logLevel: "DEBUG"
