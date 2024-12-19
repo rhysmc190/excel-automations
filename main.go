@@ -8,8 +8,6 @@ import (
 )
 
 func promptForFileName() string {
-	// directory, err := filepath.Abs(config.InputDirectory)
-	// processError(err)
 	os.Chdir(config.InputDirectory)
 	filename, err := tfd.CreateSelectDialog([]string{"xlsx"}, false)
 	processError(err)
